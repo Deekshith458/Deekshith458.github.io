@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  body {
+    background: #f1f5f8;
+    color: #172126;
+  }
+  h1,
+  h2,
+  h3 {
+    font-family: "Poppins", sans-serif;
+  }
+  *::-webkit-scrollbar {
+    width: 5px;
+  }
+  *::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  *::-webkit-scrollbar-thumb {
+    background: #c1e0f7;
+  }
+  a {
+    text-decoration: none;
+    color: #f1f5f8;
+  }
+  
+  .container {
+    margin: 0 auto;
+    width: 100vw;
+    height: 100vh;
+    max-width: 1080px;
+    display: flex;
+    align-items: center;
+    overflow: visible;
+    padding-top: 8rem;
+  }
+  
+  .image {
+    width: 40%;
+    height: 100%;
+    position: relative;
+  }
+  
+  .svg-image {
+    position: absolute;
+    bottom: -5px;
+    right: 15%;
+    height: 80vh;
+    width: 100%;
+  }
+  
+  .welcome {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 100%;
+  }
+  .hey {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+  .greeting {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 1rem 0;
+  }
+  
+  .instruction {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    color: #676b6f;
+  }
+  
+  .input-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0;
+    padding: 0 1rem 0 0;
+  }
+  
+  .input {
+    padding: 16px 32px;
+    margin-bottom: 15px;
+    border-radius: 999px;
+    border: 1px solid #d4d9dc;
+    background-color: #fafbfc;
+    color: #676b6f;
+  }
+  
+  .input:focus {
+    border-color: #ee52524d;
+    outline: rgba(238, 82, 82, 0.3) solid 2px;
+  }
+  
+  .input::placeholder {
+    color: #a4acb4;
+  }
+  
+  .btn {
+    cursor: pointer;
+    min-width: 120px;
+    display: inline-block;
+    padding: 16px 32px;
+    border-radius: 999px;
+    box-shadow: 0px 4px 6px -4px rgb(24 39 75 / 12%),
+      0px 8px 8px -4px rgb(24 39 75 / 8%);
+    transition: background-color 0.15s ease, transform 0.15s ease,
+      box-shadow 0.15s ease, border 0.15s ease, color 0.15s ease,
+      opacity 0.15s ease, -webkit-transform 0.15s ease,
+      -webkit-box-shadow 0.15s ease;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 0.12em;
+    border: 2px solid #800020;
+  }
+  
+  .btn-primary {
+    background-color: #800020;
+    color: #f1f5f8;
+  }
+  
+  .btn-primary:hover {
+    background-color: #540015;
+    border-color: #540015;
+  }
+  
+  .btn-outlined {
+    background: #f1f5f8;
+    color: #800020;
+  }
+  
+  .btn-outlined:hover {
+    color: #540015;
+    border-color: #540015;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content: center;
+      padding-top: 4rem;
+    }
+  
+    .image {
+      width: 100%;
+      min-height: 50vh;
+    }
+  
+    .svg-image {
+      height: 50vh;
+      width: 100%;
+    }
+  
+    .welcome {
+      width: 90%;
+      height: fit-content;
+      margin-bottom: 2rem;
+    }
+  
+    .greeting {
+      font-size: 36px;
+      margin-bottom: 1rem;
+    }
+  
+    .input-form {
+      max-width: 100%;
+      margin-bottom: 1rem;
+    }
+  }
+  
